@@ -1,0 +1,47 @@
+ body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+
+#game{
+    border-radius: 1rem;
+    padding: 4rem 8rem;
+    background-color: cadetblue;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.sqr{
+    width: 80px;
+    height: 80px;
+    background-color: palevioletred;
+    margin: .5rem;
+    font-weight: bold;
+}
+.mycountiner{
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    top: 185px;
+    background-color: rgba(0, 0, 0, 0.557);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 3rem;
+} 
+span{
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 2rem;
+    position: absolute;
+    top: 83%;
+    border: 1px solid #166959;
+    padding: 1rem;
+    border-radius: 1rem;
+}
