@@ -18,9 +18,9 @@ x=x-10;
 y=y-20
   let diferentsqr='rgb'+'('+ x +','+ y +','+ z +')';
   sqr[randomi].style.backgroundColor=diferentsqr;
-  let difbtn= sqr[randomi]
+  let differentbtn= sqr[randomi]
   chackcounter=true
-difbtn.addEventListener('click',function(){
+differentbtn.addEventListener('click',function(){
     let win=document.createElement('p')
     playgame.innerHTML='winner'
     body.style.backgroundColor='green'
