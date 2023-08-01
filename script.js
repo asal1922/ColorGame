@@ -4,9 +4,10 @@ let body=document.getElementById('body')
 let counter=document.querySelector('span')
 let count=0;
 let checkcounter=true;
-
+let input1=document.getElementById('input')
 
 playgame.addEventListener('click',function(){
+  input1.value=''
   playgame.innerHTML='playgame'
   body.style.backgroundColor='gray';
 let x=Math.floor(Math.random()*100)
@@ -25,8 +26,27 @@ y=y-20;
   sqr[randomi].style.backgroundColor=diferentsqr;
   let differentbtn= sqr[randomi]
   checkcounter=true;
-  differentbtn.addEventListener('click',function(){
-  
+  input1.addEventListener('keydown',function(event){
+    if(event.keyCode===13){
+    if(Number(input1.value)===randomi){
+      playgame.innerHTML='winner'
+      body.style.backgroundColor='green'
+      if(checkcounter){
+        count++;
+        counter.innerHTML=count
+        checkcounter=false;
+      }
+      console.log(randomi)
+    }
+    else   {
+      playgame.innerHTML='PlayAgain!!!'
+      body.style.backgroundColor='red'
+    } 
+  }
+  })
+ 
+  /* sqr[randomi].addEventListener('click',function(){
+
     playgame.innerHTML='winner'
     body.style.backgroundColor='green'
     if(checkcounter){
@@ -35,6 +55,6 @@ y=y-20;
       checkcounter=false;
     }
     console.log(randomi)
-  })
+ 
+}) */
 })
-
